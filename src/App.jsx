@@ -1,8 +1,9 @@
 // src/App.jsx
 import React from 'react';
+import { useState } from 'react';
 import Product from './Product';
 function App() {
- 
+  const [cart, setCart] = useState(0);
   const productList = [
     { id: 1, name: "Apple iPhone 15", price: "$999" },
     { id: 2, name: "Samsung S24", price: "$899" },
@@ -11,12 +12,15 @@ function App() {
   ];
 
   function handleAddToCart() {
-    console.log("Item added to cart!");
+    setCart(cart + 1); 
+    console.log("Adding to cart...");
   }
-
+ 
   return (
     <div>
+        <h3>Cart: {cart}</h3>
         <h2>Product List</h2>
+
       <div className="product-container">
         
         {productList.map((item) => (
@@ -24,12 +28,15 @@ function App() {
             key={item.id}          
             name={item.name}       
             price={item.price}     
-            onAddToCart={handleAddToCart} 
+            onAddToCart={handleAddToCart}
+            cart={cart} 
           />
         ))}
       </div>
     </div>
   );
 }
+
+
 
 export default App;

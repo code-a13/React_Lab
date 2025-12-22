@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import App from './App'
 import Product from './Product'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />

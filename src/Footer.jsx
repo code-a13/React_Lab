@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 My eCommerce Store. All rights reserved.</p>
+      <p> &copy; {new Date().getFullYear()} My eCommerce Store. All rights reserved.</p>
     </footer>
   );
 }

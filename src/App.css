@@ -10,14 +10,14 @@
   }
   
   .product {
-    border: 1px solid #ddd;
+    border: 1px solid #433f3f;
     padding: 20px;
     border-radius: 8px;
     width: 200px;
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #62615e;
     color: white;
     padding: 10px;
     border: none;
@@ -25,7 +25,7 @@
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #d2b967;
   }
   
   .cart {

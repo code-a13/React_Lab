@@ -2,6 +2,7 @@
 import React from 'react';
 
 function Product({ name, price, onAddToCart }) {
+  let cart = 0;
   return (
     <div className="product">
       <h3>{name}</h3>
