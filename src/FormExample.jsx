@@ -30,7 +30,7 @@ function FormExample() {
                     <input 
                         type = "text"
                         name = "name"
-                        placeholder="Enter Email "
+                        placeholder="Enter Name "
                         value = {formData.name}
                         onChange={handleChange}
                         required />
