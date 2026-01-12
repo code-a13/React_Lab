@@ -1,7 +1,8 @@
 import React from "react";
+
 function Menu({ setActiveComponent }) {
   return (
-    <div style={{ width: "220px", borderRight: "1px solid #ddd", padding: "15px" }}>
+    <div style={{ width: "220px", borderRight: "1px solid #ddd", padding: "15px", background: "#f9f9f9" }}>
       <h3>Programs</h3>
 
       <button onClick={() => setActiveComponent("counter")}>
@@ -18,6 +19,12 @@ function Menu({ setActiveComponent }) {
 
       <button onClick={() => setActiveComponent("formexample")}>
         Form Submit PROGRAM-3
+      </button>
+
+      <br /><br />
+      
+      <button onClick={() => setActiveComponent("color")}>
+        BG Color Change PROGRAM-4
       </button>
     </div>
   );

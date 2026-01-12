@@ -1,10 +1,9 @@
 import { useState } from "react";
 import Menu from "./Menu";
 import Counter from "./Counter";
-import Todo from "./ToDoList";
-import Form from "./FormExample";
-import TodoList from "./ToDoList";
-import FormExample from "./FormExample";
+import TodoList from "./ToDoList"; 
+import FormExample from "./FormExample"; 
+import Color from "./Color";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("counter");
@@ -17,6 +16,8 @@ function App() {
         return <TodoList />;
       case "formexample":
         return <FormExample />;
+      case "color":
+        return <Color />;
       default:
         return <Counter />;
     }
