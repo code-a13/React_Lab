@@ -2,30 +2,34 @@ import React from "react";
 
 function Menu({ setActiveComponent }) {
   return (
-    <div style={{ width: "220px", borderRight: "1px solid #ddd", padding: "15px", background: "#f9f9f9" }}>
-      <h3>Programs</h3>
+    <div style={{ width: "250px", borderRight: "1px solid #ddd", padding: "15px", background: "#f9f9f9", overflowY: "auto" }}>
+      <h2>Lab Programs</h2>
 
-      <button onClick={() => setActiveComponent("counter")}>
-        Counter PROGRAM-1
-      </button>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+    
+        <button onClick={() => setActiveComponent("counter")}>1. Counter</button>
+        <button onClick={() => setActiveComponent("todolist")}>2. Todo List</button>
+        <button onClick={() => setActiveComponent("formexample")}>3. Form Submit</button>
+        <button onClick={() => setActiveComponent("color")}>4. BG Color Change</button>
+        
+        <hr style={{ width: "100%" }} />
 
-      <br /><br />
+    
+        <button onClick={() => setActiveComponent("greeting")}>5. Dynamic Greeting</button>
+        <button onClick={() => setActiveComponent("calculator")}>6. Live Calculator</button>
 
-      <button onClick={() => setActiveComponent("todolist")}>
-        Todo List PROGRAM-2
-      </button>
+        <hr style={{ width: "100%" }} />
 
-      <br /><br />
+       
+        <button onClick={() => setActiveComponent("userlist")}>7. API User List</button>
+        <button onClick={() => setActiveComponent("tabs")}>8. Navigation Tabs</button>
 
-      <button onClick={() => setActiveComponent("formexample")}>
-        Form Submit PROGRAM-3
-      </button>
+        <hr style={{ width: "100%" }} />
 
-      <br /><br />
-      
-      <button onClick={() => setActiveComponent("color")}>
-        BG Color Change PROGRAM-4
-      </button>
+       
+        <button onClick={() => setActiveComponent("theme")}>9. Theme Toggle</button>
+        <button onClick={() => setActiveComponent("blog")}>10. Mini Blog</button>
+      </div>
     </div>
   );
 }
